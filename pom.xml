@@ -19,35 +19,35 @@
     </properties>
 
     <build>
-                <!-- To define the plugin version in your parent POM -->
-                <pluginManagement>
-                    <plugins>
-                        <plugin>
-                            <groupId>com.zenjava</groupId>
-                            <artifactId>javafx-maven-plugin</artifactId>
-                            <version>2.0</version>
-                        </plugin>
-                    </plugins>
-                </pluginManagement>
-                <!-- To use the plugin goals in your POM or parent POM -->
-                <plugins>
-                    <plugin>
-                        <groupId>com.zenjava</groupId>
-                        <artifactId>javafx-maven-plugin</artifactId>
-                        <version>2.0</version>
+        <!-- To define the plugin version in your parent POM -->
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.zenjava</groupId>
+                    <artifactId>javafx-maven-plugin</artifactId>
+                    <version>2.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <!-- To use the plugin goals in your POM or parent POM -->
+        <plugins>
+            <plugin>
+                <groupId>com.zenjava</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>2.0</version>
                 <configuration>
 
                     <!-- executable JAR file is built by default (not optional at this stage) -->
                     <mainClass>net.rhuang.javafx.examples.HelloJavaFxApp</mainClass>
 
                 </configuration>
-                        <dependencies>
-                            <dependency>
-                                <groupId>org.twdata.maven</groupId>
-                                <artifactId>mojo-executor</artifactId>
-                                <version>2.1.0</version>
-                            </dependency>
-                        </dependencies>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.twdata.maven</groupId>
+                        <artifactId>mojo-executor</artifactId>
+                        <version>2.1.0</version>
+                    </dependency>
+                </dependencies>
             </plugin>
 
         </plugins>
